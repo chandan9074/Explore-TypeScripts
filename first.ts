@@ -19,3 +19,18 @@ function add(fist: number , second:number):number{
 }
 
 const answer: number = add(10, 20);
+
+
+// array in type script 
+
+const books : string[] = ["bangla", "english", "math", "physics"]; // sring[] , because books is a    arrau. so we extra add []
+
+const price:number[] = [1000, 2000, 3000, 4000]; // same like as string
+
+price.push(8000);
+// price.push("8000") // this is not possible because, price is a number array;
+
+books.push("cse");
+// books.push(9000) // same like as price
+
+
