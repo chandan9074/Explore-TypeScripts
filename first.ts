@@ -51,3 +51,7 @@ const teacher: {name: string, id: string, age: number} = {
     age : 23
 }
 
+// arrow function in type script
+
+const job = (location : string , post: string) : string => location + " " + post;
+job("usa", "softwere engineer")
