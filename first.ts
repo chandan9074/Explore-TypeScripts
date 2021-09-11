@@ -55,3 +55,44 @@ const teacher: {name: string, id: string, age: number} = {
 
 const job = (location : string , post: string) : string => location + " " + post;
 job("usa", "softwere engineer")
+
+// interface (most important part in ts) in ts
+
+interface player {
+    name: string, 
+    age: number,
+    catagory: string, 
+    country: string,
+    hobby?: string   // make hobby optional by using ?
+}
+
+// interface extends example
+
+const shakib: player = {
+    name : "shakib al hasan",
+    age: 34, 
+    catagory: "cricketer",
+    country: "bangladesh"
+}
+
+interface family {
+    parents: string[],
+    wife?: string,   // make optional
+    children?: number  // make optional
+}
+
+interface developer extends family {   // extends family in developer interface. means now developer also have the property of family.
+    name: string,
+    company : string,
+    post : string,
+    salary : number
+}
+
+const chandan: developer = {
+    name: "chandan kumar das",
+    company: "usa top company",
+    post: "softwere engineer",
+    salary: 200000,
+    parents: ["sunil chandra", "gita rani"],
+}
+
