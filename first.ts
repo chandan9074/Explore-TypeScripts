@@ -96,3 +96,24 @@ const chandan: developer = {
     parents: ["sunil chandra", "gita rani"],
 }
 
+
+// class in ts
+
+class car {
+    model: string;
+    price: number;
+    private _serialNo: number;
+    constructor(model: string, price:number){
+        // const carDetails = model + price;
+        this.model = model;
+        this.price = price;
+        this._serialNo = 1000;
+    }
+
+    getTotalInfo(tax:number): number{
+        const output = this.price - this.price * tax/100;
+        return output;
+    }
+}
+
+const bmw= new car("BMW", 50000000);   // create car object
