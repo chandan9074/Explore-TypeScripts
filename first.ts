@@ -34,3 +34,20 @@ books.push("cse");
 // books.push(9000) // same like as price
 
 
+// object type scirpt
+
+type person = {name: string, id: string, age: number}; // externally declear the object types
+
+const student: person = {
+    name : "chandan",
+    id : "182-15-11611",
+    age : 23
+}
+
+// we can also declear the object types in the following way
+const teacher: {name: string, id: string, age: number} = {  
+    name : "chandan",
+    id : "182-15-11611",
+    age : 23
+}
+
